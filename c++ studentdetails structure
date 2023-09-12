@@ -1,0 +1,36 @@
+#include<iostream.h>
+#include<conio.h>
+struct student_details{ 
+char name[20];
+char fname[20];
+char address[20];
+int rollno;
+long pin;};
+void main()
+{  student_details a[10];
+int i;
+clrscr();
+ for(i=0;i<10; i++)
+ {
+cout<<"enter"<< i+1 <<"student_details\n";
+ 	cout<<"name:";
+ 	cin>>a[i].name;
+ 	cout<<"father name:";
+ 	cin>>a[i].fname;
+ 	cout<<"address:";
+ 	cin>>a[i].address;
+ 	cout<<"rollno:";
+ 	cin>>a[i].rollno;
+ 	cout<<"pincode:";
+ 	cin>>a[i].pin;}
+ 	cout<<"\n\n here all student_details\n\n ";
+ 	 for(i=0;i<10; i++)
+ {
+ 	cout<<"\n \nhere "<<i+1<<"student_details";
+ 	cout<<"\n name :"<<a[i].name;
+ 	cout<<"\n father name :"<<a[i].fname;
+ 	cout<<"\n address:"<<a[i].address;
+	cout<<"\n rollno :"<<a[i].rollno;	
+	cout<<"\n pincode:"<<a[i].pin;}
+	getch();}
+	
